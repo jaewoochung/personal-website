@@ -15,8 +15,8 @@ const Works = () => (
 		<SimpleGrid columns={[1, 1, 2]} gap={6}>
       <Section>
         <WorkGridItem id="chatapp" title="ChatApp" thumbnail={thumbChat}>
-          A Markdown note-taking app with 100+ plugins, cross-platform and
-          encrypted data sync support
+          A Fullstack application that allows a user to send real time messages.
+					Makes use of third party services - twilio and stream-chat
         </WorkGridItem>
       </Section>
       <Section>
@@ -43,7 +43,7 @@ const Works = () => (
 
 			<Section delay={0.1}>
 				<WorkGridItem id="sudoku" thumbnail={thumbSudoku} title="Sudoku">
-					An android Sudoku App
+					An sudoku android application - Full functionalities of the famous logic based puzzle
 				</WorkGridItem>
 			</Section>
     </SimpleGrid>

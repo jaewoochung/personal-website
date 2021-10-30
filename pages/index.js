@@ -18,9 +18,9 @@ import Paragraph from '../components/paragraph.js'
 import { BioSection, BioYear } from '../components/bio.js'
 
 const Page = () => {
-	return(
+	return (
 		<Container>
-			<Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
+			<Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3}  mb={6} align="center">
 				Hello - I am full stack developer based in Boston
 			</Box>
 
@@ -40,25 +40,25 @@ const Page = () => {
           <Image
             borderColor="whiteAlpha.800"
             borderWidth={2}
-            borderStyle="solid"
-            maxWidth="100px"
-            display="inline-block"
-            borderRadius="full"
-            src="/images/jaewoo.png"
-            alt="Profile image"
-          />
+						borderStyle="solid"
+						maxWidth="100px"
+						display="inline-block"
+						borderRadius="full"
+						src="/images/jaewoo.png"
+						alt="Profile image"
+					/>
         </Box>
 			</Box>
 			<Section delay={0.1}>
 				<Heading as="h3" variant="section-title">
 					About
 				</Heading>
-				<Paragraph>I am a recent graduate from the University of Massachusetts - Boston.
-					I have a passion for developing and programming. I like to build FullStack applications
-					<NextLink href=""><Link> Inkdrop</Link></NextLink>.
+				<Paragraph>
+					I have a passion for developing and programming. &#10; I enjoy building FullStack applications as well as learning new
+					technologies such as Machine Learning.
 				</Paragraph>
 				<Box align="center" my={4}>
-          <NextLink href="/works">
+          <NextLink href="https://github.com/jaewoochung" target="_blank">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
             </Button>
@@ -75,21 +75,21 @@ const Page = () => {
           Born in Seoul (서울), Korea.
         </BioSection>
 				<BioSection>
+          <BioYear>2000</BioYear>
+					Immigrated to Boston, MA
+        </BioSection>
+				<BioSection>
 					<BioYear>2015</BioYear>
 					Graduated from Arlington High School
 				</BioSection>
         <BioSection>
           <BioYear>2020</BioYear>
-          Completed my Bachelor&apos;s Program at the University of Massachusetts Boston
-					in Computer Science
+          Completed my Bachelor&apos;s degree at the University of Massachusetts Boston
+					- Computer Science
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>
-          Worked at Akamai Technologies - Cambridge, MA
-        </BioSection>
-        <BioSection>
-          <BioYear>Present</BioYear>
-					Seeking a Software Developer/Engineering Position
+          Akamai Technologies - Cambridge, MA
         </BioSection>
       </Section>
 
