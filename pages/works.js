@@ -14,7 +14,12 @@ const Works = () => (
 
 		<SimpleGrid columns={[1, 1, 2]} gap={6}>
       <Section>
-        <WorkGridItem id="chatapp" title="ChatApp" thumbnail={thumbChat}>
+        <WorkGridItem
+					id="chatapp"
+					title="ChatApp"
+					thumbnail={thumbChat}
+					gitLink="https://github.com/jaewoochung/chat-pager-client"
+				>
           A Fullstack application that allows a user to send real time messages.
 					Makes use of third party services - twilio and stream-chat
         </WorkGridItem>
@@ -24,6 +29,7 @@ const Works = () => (
           id="dashboard"
           title="dashboardApp"
           thumbnail={thumbDashboard}
+					gitLink="https://main.d2s9eeiwuys93w.amplifyapp.com/"
 				>
           A utility front end application for daily information intake.
 					Provides local weather, NBA scores, and news
@@ -35,6 +41,7 @@ const Works = () => (
           id="painting"
           title="Basic painting recognition"
           thumbnail={thumbPainting}
+					gitLink="https://github.com/jaewoochung/painting-classifier"
 				>
           A video work generated with deep learning, imitating famous four
           painters like Van Gogh
@@ -42,7 +49,12 @@ const Works = () => (
 			</Section>
 
 			<Section delay={0.1}>
-				<WorkGridItem id="sudoku" thumbnail={thumbSudoku} title="Sudoku">
+				<WorkGridItem
+					id="sudoku"
+					thumbnail={thumbSudoku}
+					title="Sudoku"
+					gitLink="https://github.com/jaewoochung/Sudoku"
+				>
 					An sudoku android application - Full functionalities of the famous logic based puzzle
 				</WorkGridItem>
 			</Section>

@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "dev": "next dev -H 0.0.0.0"
+    "start": "next start",
+    "dev": "next dev -H 0.0.0.0",
+		"build": "next build"
   },
   "keywords": [],
   "author": "Jaewoo Chung",
