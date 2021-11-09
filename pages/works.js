@@ -5,6 +5,7 @@ import thumbChat from '../public/images/works/chat.png'
 import thumbDashboard from '../public/images/works/dashboard.png'
 import thumbPainting from '../public/images/works/painting.png'
 import thumbSudoku from '../public/images/works/sudoku.png'
+import thumbBrick from '../public/images/works/brickBreaker.png'
 
 const Works = () => (
 	<Container>
@@ -18,7 +19,7 @@ const Works = () => (
 					id="chatapp"
 					title="ChatApp"
 					thumbnail={thumbChat}
-					gitLink="https://github.com/jaewoochung/chat-pager-client"
+					gitLink="https://chat-app-jaewoo.netlify.app/"
 				>
           A Fullstack application that allows a user to send real time messages.
 					Makes use of third party services - twilio and stream-chat
@@ -34,17 +35,17 @@ const Works = () => (
           A utility front end application for daily information intake.
 					Provides local weather, NBA scores, and news
 				</WorkGridItem>
-			</Section>
+			</Section>      
 
       <Section delay={0.1}>
 				<WorkGridItem
-          id="painting"
-          title="Basic painting recognition"
-          thumbnail={thumbPainting}
-					gitLink="https://github.com/jaewoochung/painting-classifier"
+          id="brickBreaker"
+          title="Brick breaker game"
+          thumbnail={thumbBrick}
+					gitLink="https://github.com/jaewoochung/brick-breaker"
 				>
-          A video work generated with deep learning, imitating famous four
-          painters like Van Gogh
+          Famous arcade game - Brick Breaker
+          Object oriented focused game project.
 				</WorkGridItem>
 			</Section>
 
@@ -58,6 +59,19 @@ const Works = () => (
 					An sudoku android application - Full functionalities of the famous logic based puzzle
 				</WorkGridItem>
 			</Section>
+
+      <Section delay={0.1}>
+				<WorkGridItem
+          id="painting"
+          title="Basic painting recognition"
+          thumbnail={thumbPainting}
+					gitLink="https://github.com/jaewoochung/painting-classifier"
+				>
+          A video work generated with deep learning, imitating famous four
+          painters like Van Gogh
+				</WorkGridItem>
+			</Section>
+      
     </SimpleGrid>
 		
 	</Container>

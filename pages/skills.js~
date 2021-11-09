@@ -1,0 +1,15 @@
+import {
+	Container,
+	Heading,
+	Box
+} from '@chakra-ui/react'
+
+const Skills = () => (
+	<Container>
+		<Heading>
+			Skills
+		</Heading>
+	</Container>
+)
+
+export default Skills

@@ -88,8 +88,8 @@ const Page = () => {
 					- Computer Science
         </BioSection>
         <BioSection>
-          <BioYear>2021</BioYear>
-          Akamai Technologies - Cambridge, MA
+          <BioYear>2020</BioYear>
+          Started working at Akamai Technologies - Cambridge, MA
         </BioSection>
       </Section>
 
