@@ -6,6 +6,7 @@ import {
 	Text,
 	Image
 } from '@chakra-ui/react'
+import SkillBox from '../components/skillBox'
 
 const Skills = () => (
 	<Container>
@@ -13,22 +14,54 @@ const Skills = () => (
 			Skills
 		</Heading>
 		<Box>
-			<Flex justify="space-between">
-				<Text fontSize={25}>Python</Text>
-				<Image maxWidth="125px" src="/images/skills/python.png" />
-			</Flex>
-			<Flex justify="space-between">
-				<Text fontSize={25}>Javascript</Text>
-				<Image maxWidth="125px" src="/images/skills/javascript.png" />
-			</Flex>
-			<Flex justify="space-between">
-				<Text fontSize={25}>Git</Text>
-				<Image maxWidth="125px" src="/images/skills/git.png" />
-			</Flex>
-			<Flex justify="space-between">
-				<Text fontSize={25}>Linux</Text>
-				<Image maxWidth="125px" src="/images/skills/linux.png" />
-			</Flex>			
+      <SkillBox
+        id="python"
+        skillName="Python"
+        experience="Proficient"
+        imageLink="/images/skills/python.png"
+      />
+      <SkillBox
+        id="javascript"
+        skillName="JavaScript"
+        experience="Proficient"
+        imageLink="/images/skills/javascript.png"
+      />
+      <SkillBox
+        id="git"
+        skillName="Git"
+        experience="Proficient"
+        imageLink="/images/skills/git.png"
+      />
+      <SkillBox
+        id="linux"
+        skillName="Linux"
+        experience="Proficient"
+        imageLink="/images/skills/linux.png"
+      />
+      <SkillBox
+        id="html-css"
+        skillName="HTML/CSS"
+        experience="Intermediate"
+        imageLink="/images/skills/css.png"
+      />
+      <SkillBox
+        id="mongo"
+        skillName="mongoDB"
+        experience="Intermediate"
+        imageLink="/images/skills/mongo.png"
+      />
+      <SkillBox
+        id="redux"
+        skillName="Redux"
+        experience="Intermediate"
+        imageLink="/images/skills/redux.png"
+      />
+      <SkillBox
+        id="sql"
+        skillName="SQL"
+        experience="Intermediate"
+        imageLink="/images/skills/sql.png"
+      />
 		</Box>
 	</Container>
 )
