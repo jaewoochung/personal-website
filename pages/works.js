@@ -6,6 +6,7 @@ import thumbDashboard from '../public/images/works/dashboard.png'
 import thumbPainting from '../public/images/works/painting.png'
 import thumbSudoku from '../public/images/works/sudoku.png'
 import thumbBrick from '../public/images/works/brickBreaker.png'
+import thumbSocial from '../public/images/works/social-network.png'
 
 const Works = () => (
 	<Container>
@@ -14,6 +15,16 @@ const Works = () => (
 		</Heading>
 
 		<SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <Section>
+        <WorkGridItem
+          id="social-network"
+          title="Social Network"
+          thumbnail={thumbSocial}
+          gitLink="https://social-network-client-delta.vercel.app/"
+        >
+          A replication of social media platforms with core features such as creating users, posts, friending and liking
+        </WorkGridItem>
+      </Section>
       <Section>
         <WorkGridItem
 					id="chatapp"
